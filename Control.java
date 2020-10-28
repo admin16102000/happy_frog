@@ -61,22 +61,22 @@ public class Control implements KeyListener {
         this.widthPanel = widthPanel;
         f.getButtonPause().addKeyListener(this);
         f.getButtonSave().addKeyListener(this);
-//        if (file.exists()) {
-//            loadFile();
-//        } else {
-//            x1 = 150;
-//            yFrog = 70;
-//            distance = 150;
-//            distance1 = 175;
-//            distance2 = 200;
-//            h1 = (heightPanel - distance) * 3 / 5;
-//            h2 = (heightPanel - distance1) * 2 / 5;
-//            x2 = x1 + 35 * 2 + distance2;
-//            h3 = (heightPanel - distance) - h1;
-//            h4 = (heightPanel - distance1) - h2;
-//            point = 0;
-//            f.getDisplayPoint().setText("Point : " + point);
-//        }
+       if (file.exists()) {
+           loadFile();
+       } else {
+           x1 = 150;
+           yFrog = 70;
+           distance = 150;
+           distance1 = 175;
+           distance2 = 200;
+           h1 = (heightPanel - distance) * 3 / 5;
+           h2 = (heightPanel - distance1) * 2 / 5;
+           x2 = x1 + 35 * 2 + distance2;
+           h3 = (heightPanel - distance) - h1;
+           h4 = (heightPanel - distance1) - h2;
+           point = 0;
+           f.getDisplayPoint().setText("Point : " + point);
+       }
 
     }
 
